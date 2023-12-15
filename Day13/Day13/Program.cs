@@ -64,7 +64,7 @@ bool IsMatch(char[,] leftOrTop, char[,] rightOrBottom, int differenceCount, Mirr
     return differences == differenceCount;
 }
 
-(int mirrorLinesWidth, int leftLinesCount, int topLinesCount) GetMirrorFromMap(char[,] map, int differenceCount)
+(int mirrorLinesCount, int leftLinesCount, int topLinesCount) GetMirrorFromMap(char[,] map, int differenceCount)
 {
     var matrix = new ReadOnlySpan2D<char>(map);
     var columns = map.GetLength(1);
